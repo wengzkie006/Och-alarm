@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Theresa Ochagavia Alarm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maria Theresa Ochagavia Alarm</h1>
+        <div class="time-display">
+            <span id="current-time">00:00:00</span>
+        </div>
+
+        <!-- Alarm 1 -->
+        <div class="alarm-set">
+            <label for="alarm-time-1">Set Alarm 1:</label>
+            <input type="time" id="alarm-time-1" required>
+            <select id="alarm-tone-1">
+                <option value="goodmorning.mp3">Tone 1</option>
+                <option value="goodnight.mp3">Tone 2</option>
+                <option value="studytime.mp3">Tone 3</option>
+            </select>
+            <button id="set-alarm-1">Set Alarm 1</button>
+            <button id="stop-alarm-1" disabled>Stop Alarm 1</button>
+        </div>
+
+        <!-- Alarm 2 -->
+        <div class="alarm-set">
+            <label for="alarm-time-2">Set Alarm 2:</label>
+            <input type="time" id="alarm-time-2" required>
+            <select id="alarm-tone-2">
+                <option value="goodmorning.mp3">Tone 1</option>
+                <option value="goodnight.mp3">Tone 2</option>
+                <option value="studytime.mp3">Tone 3</option>
+            </select>
+            <button id="set-alarm-2">Set Alarm 2</button>
+            <button id="stop-alarm-2" disabled>Stop Alarm 2</button>
+        </div>
+
+        <!-- Alarm 3 -->
+        <div class="alarm-set">
+            <label for="alarm-time-3">Set Alarm 3:</label>
+            <input type="time" id="alarm-time-3" required>
+            <select id="alarm-tone-3">
+                <option value="goodmorning.mp3">Tone 1</option>
+                <option value="goodnight.mp3">Tone 2</option>
+                <option value="studytime.mp3">Tone 3</option>
+            </select>
+            <button id="set-alarm-3">Set Alarm 3</button>
+            <button id="stop-alarm-3" disabled>Stop Alarm 3</button>
+        </div>
+
+        <!-- Personalized Picture Upload -->
+        <div class="image-upload">
+            <label for="upload-image">Upload Personalized Picture:</label>
+            <input type="file" id="upload-image" accept="image/*">
+        </div>
+        <div class="image-preview">
+            <img id="preview" src="#" alt="Your Personalized Image" style="display: none;">
+        </div>
+
+        <!-- Background Selection -->
+        <div class="background-select">
+            <label for="background-select">Choose Background:</label>
+            <select id="background-select">
+                <option value="background1.jpg">Background 1</option>
+                <option value="background2.jpg">Background 2</option>
+                <option value="background3.jpg">Background 3</option>
+            </select>
+        </div>
+
+        <!-- Alarm Sound -->
+        <audio id="alarm-sound"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
